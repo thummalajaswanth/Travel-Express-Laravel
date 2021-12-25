@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    width: 130px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+label {
+    font-family: 'Cairo', sans-serif;
+}
+
+th {
+    font-family: 'Mulish', sans-serif;
+}
+
+td {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Patua One', cursive;
+}
+
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+h5 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+footer ul li {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar-text {
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar>.nav-item>.nav-link:hover {
+    color: #4BC0D9
+}
+
+.navbar-brand>.navbar-text:hover {
+    color: #4BC0D9
+}
+
+.nav-link {
+    font-family: 'Roboto Slab', serif;
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown-menu {
+    min-width: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    white-space: normal;
+}
+
+.dropdown-item {
+    font-family: 'Roboto Slab', serif;
+}
+
+#premiumPackage>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.custom-carousel {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #080d15;
+    opacity: .5;
+}
+
+.carousel-item {
+    height: 60vh;
+}
+
+#carouselControls .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #4BC0D9;
+}
+
+.carousel-indicators li {
+    background-color: #4BC0D9;
+}
+
+#carouselControls .carousel-caption>h2 {
+    animation-delay: 1s;
+}
+
+#carouselControls .carousel-caption>p {
+    animation-delay: 1s;
+}
+
+#carouselControls .carousel-caption {
+    padding-bottom: 180px;
+}
+
+#carouselControls .carousel-caption h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.single-content {
+    position: relative;
+    transition: 3s;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.single-content .text-content, .single-content::after {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+
+.single-content::after {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transform: rotate3d(-1, 1, 0, 100deg);
+    transition: .4s;
+}
+
+.single-content:hover::after {
+    opacity: .9;
+    transform: rotate3d(0, 0, 0, 0deg)
+}
+
+.single-content img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%, -30%);
+    transition: .3s;
+    text-align: center;
+    color: #fff;
+}
+
+.single-content:hover .text-content {
+    opacity: 1;
+    transform: translate(0, -50%);
+    transition-delay: .3s;
+}
+
+.testimonials {
+    margin: 50px auto;
+}
+
+.testimonials h1 {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.testimonials .row {
+    margin-top: 30px;
+}
+
+.testimonials .row .col-md-4 {
+    margin: 40px auto;
+}
+
+.profile {
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+}
+
+.profile img {
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid white;
+}
+
+.user {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%
+}
+
+.profile h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #4BC0D9;
+}
+
+blockquote {
+    font-size: 16px;
+    line-height: 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 50px;
+    position: relative;
+    color: #4BC0D9;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 50px;
+    position: relative;
+    color: #4BC0D9;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.copyright {
+    background-color: #202020;
+}
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333
+}
+
+.border {
+    height: 4px;
+    width: 180px;
+    background: #4BC0D9;
+    margin: 20px auto
+}
+
+.gallery-section .gallery {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.gallery-section .image {
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .image img {
+    width: 100%;
+    height: 100%;
+    transform: 0.4s
+}
+
+.gallery-section .image img:hover {
+    transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:768px) {
+    .gallery-section .image {
+        flex: 50%
+    }
+}
+
+@media screen and (max-width:960px) {
+    .gallery-section .image {
+        flex: 33.33%
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section .image {
+        flex: 100%
+    }
+}
+
+.bg {
+    background: url(/images/background-images/bg-1.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: local;
+}
+
+.form-container {
+    position: absolute;
+    top: 15vh;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+    left: auto;
+    right: auto;
+}
+
+#registrationForm {
+    top: 10vh;
+}
+
+@media only screen and (max-width:768px) {
+    .bg {
+        background: none;
+    }
+}
+
+label.file-upload input[type="file"] {
+    position: absolute;
+    top: -1000px;
+    /* overflow: hidden; */
+}
+
+.file-upload {
+    background: #4BC0D9;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 45px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 12vw;
+    object-fit: cover;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
